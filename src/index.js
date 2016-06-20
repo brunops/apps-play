@@ -3,13 +3,11 @@ import React from 'react'
 
 import './index.html'
 
-const Root = () => {
-    return (
-        <h1>Hello World</h1>
-    )
-}
+const Root = () => (
+  <h1>Hello World</h1>
+)
 
 render(
-    <Root />,
-    document.getElementById('root')
+  <Root />,
+  document.getElementById('root')
 )

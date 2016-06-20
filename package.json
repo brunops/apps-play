@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback --hot --progress --port 3000",
+    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback --progress --port 3000",
     "validate:webpack": "webpack-validator webpack.config.js",
     "lint": "standard"
   },

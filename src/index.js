@@ -1,3 +1,4 @@
+import { render } from 'react-dom'
 import React from 'react'
 
 import './index.html'
@@ -8,4 +9,7 @@ const Root = () => {
     )
 }
 
-export default Root
+render(
+    <Root />,
+    document.getElementById('root')
+)

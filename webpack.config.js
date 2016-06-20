@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const { resolve } = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
@@ -11,6 +12,7 @@ module.exports = env => ({
 
   output: {
     filename: 'bundle.js',
+    pathinfo: false,
     path: resolve(__dirname, 'dist')
   },
 
@@ -39,5 +41,9 @@ module.exports = env => ({
         loaders: ExtractTextPlugin.extract('style', 'css!sass')
       }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 })

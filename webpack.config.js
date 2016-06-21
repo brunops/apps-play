@@ -43,6 +43,10 @@ module.exports = env => ({
     ]
   },
 
+  resolve: {
+    extensions: [ '', '.js' ]
+  },
+
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ]

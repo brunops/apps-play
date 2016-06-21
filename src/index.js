@@ -1,13 +1,11 @@
 import { render } from 'react-dom'
 import React from 'react'
+import { Router, browserHistory } from 'react-router/es6'
+import routes from './routes'
 
-import './index.html'
-
-const Root = () => (
-  <h1>Hello World</h1>
-)
+// import './index.html'
 
 render(
-  <Root />,
+  <Router history={browserHistory} routes={routes} />,
   document.getElementById('root')
 )
